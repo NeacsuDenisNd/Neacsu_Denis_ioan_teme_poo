@@ -1,3 +1,4 @@
+
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <string>
@@ -40,6 +41,7 @@ public:
         cout << endl << "Cod: " << this->cod_pensiune;
         cout << endl << "Denumire: " << this->denumire_pensiune;
         cout << endl << "Numar de camere: " << this->nr_camere;
+
         if (this->nr_camere > 0)
         {
             cout << endl << "Tarife per camera: ";
@@ -55,6 +57,7 @@ public:
 
         cout << endl;
     }
+
     int getNrCamere()
     {
         return this->nr_camere;
@@ -67,6 +70,8 @@ public:
             this->nr_camere = nrCamereNou;
         }
     }
+
+
     float* getVectorTarife()
     {
         float* vectorTarifeNou = new float[this->nr_camere];
